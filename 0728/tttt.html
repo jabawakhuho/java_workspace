@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script>
+var a=26;
+var num = new Array(a+1);
+//var cat=["이현호","김준현"];
+var people =["김준현","황석환","박지호","박찬홍","이현호","이경민","이선용","김승현","안희수 ","유현승","송영택","임권창","김태현","김명현","최윤재","임성보","이원구","임하진","박성주","현재우","성지석","고재광","정주성","이규호","김학봉 ","김진창","이상신"];
+var seat = new Array(a+1);
+
+var x = parseInt((Math.random()*26)) +1;
+
+window.addEventListener("load",function(){
+	td = document.getElementById("tb");
+	
+	for(var i=0; i < num.length; i++){
+		count();
+	}
+	console.log(num);
+	test();
+	//arr();
+
+});
+
+function count(){
+	for(var i =0; i <num.length ; i++){
+		if(num[i]==x){
+			x=parseInt(Math.random()*26)+1;
+			i=-1;
+		}
+	}
+//	console.log(x);
+	
+	for(var i =0; i < num.length; i++){
+		if(num[i] == undefined){
+			num[i]=x;
+			return;
+		}
+	}
+	// console.log(t);
+}
+
+function test(){
+	for(var i =0; i < num.length ; i++){
+		var tr=document.createElement("tr");
+		var td1=document.createElement("td");
+		var td2=document.createElement("td");
+		td1.innerText=people[i];
+		td2.innerText=num[i];
+		tb.appendChild(td1);
+		tb.appendChild(td2);
+		tb.appendChild(tr);
+	}
+}
+</script>
+
+</head>
+<body>
+<table id="tb" border="1px">
+
+</table>
+</body>
+</html>
