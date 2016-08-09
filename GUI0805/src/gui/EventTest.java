@@ -18,14 +18,19 @@ import javax.swing.JFrame;
 */
 public class EventTest extends JFrame implements ActionListener{
 	JButton bt;
-		
+	JButton bt2;
+			
 	public EventTest(){
-		setLayout(new FlowLayout());	
-		bt = new JButton("나버튼");
+		setLayout(new FlowLayout());
+		
+		bt = new JButton("왼쪽버튼");
+		bt2 = new JButton("우측버튼");
 		add(bt);	
+		add(bt2);	
 		
 		//버튼과 리스너와의 연결!!!!
 		bt.addActionListener(this);
+		bt2.addActionListener(this);
 		
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize(300, 400);
@@ -38,8 +43,21 @@ public class EventTest extends JFrame implements ActionListener{
 	
 	//아래의 메서드는 사용자가 actionEvent를 일으킬때마다 호출된다!! 그리고 매개변수로
 	//해당 ActionEvent 인스턴스가 전달된다!!!
+	
+	//이벤트를 일으킨 주체 컴포넌트를 자바에서는 이벤트소스라 한다.
+	//따라서 현재 action 이벤트를 일으킨 주체는 버튼이므로, 버튼이 이벤트소스가 된다.
 	public void actionPerformed(ActionEvent e) {
-		System.out.println("나 눌렀어");
+		//Action 이벤트는 반드시 버튼에만 적용활수있는 이벤트가 아니라 다른 컴포넌트도 ActionEvent를 일으킬수있다.
+		//따라서 sun에서는 현재 발생한 이벤트가 버튼에 의한것인지, 다른 컴포넌트에 의한 것인지 예측할수없으므로,
+		// 가장 상위인 Object 형으로 받아버린다..
+		Object obj=e.getSource();
+		JButton btn=(JButton)obj;
+		//System.out.println(btn.getActionCommand()+"누름");
+		if(btn==bt){
+			System.out.println("좌측버튼 누름");
+		}else if(btn==bt2){
+			System.out.println("우측버튼 누름");
+		}
 	}
 
 	public static void main(String[] args) {
