@@ -13,11 +13,8 @@ import java.awt.Toolkit;
 public class MyCanvas2 extends Canvas {
 	Toolkit kit = Toolkit.getDefaultToolkit();
 	Image[] imgs;
-	String[] path = { "C:/java_workspace/GUI0808/res/ball1.png", "C:/java_workspace/GUI0808/res/ball2.png",
-			"C:/java_workspace/GUI0808/res/ball3.png", "C:/java_workspace/GUI0808/res/ball4.png",
-			"C:/java_workspace/GUI0808/res/ball5.png", "C:/java_workspace/GUI0808/res/ball6.png",
-			"C:/java_workspace/GUI0808/res/ball7.png", "C:/java_workspace/GUI0808/res/ball8.png",
-			"C:/java_workspace/GUI0808/res/ball9.png", "C:/java_workspace/GUI0808/res/ball10.png" };
+	Image img;
+	String[] path = { "C:/java_workspace/GUI0808/res/kim.jpg" };
 	int count = 0;
 	Gallery gallery;
 
@@ -27,13 +24,12 @@ public class MyCanvas2 extends Canvas {
 		for (int i = 0; i < imgs.length; i++) {
 			imgs[i] = kit.getImage(path[i]);
 		}
-		
+		img = kit.getImage("C:/java_workspace/GUI0808/res/kim.jpg");
 	
 	}
-	
-
 
 	public void Paint(Graphics g) {
-		g.drawImage(imgs[count], 0, 0, 700, 600, this);
+		//g.drawImage(imgs[count], 0, 0, 700, 600, this);
+		g.drawImage(img, 0, 0, 700, 600, this);
 	}
 }
