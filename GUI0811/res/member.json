@@ -1,0 +1,46 @@
+{
+	"members" : [
+		{
+			"name" : "강준",
+			"gender" : "남성",
+			"age" : "23",
+			"photo" : "C:/java_workspace/GUI0811/res/강준.jpg"
+		},
+		{
+			"name" : "케이",
+			"gender" : "여성",
+			"age" : "23",
+			"photo" : "C:/java_workspace/GUI0811/res/kei.jpg"
+		},
+		{
+			"name" : "은하",
+			"gender" : "여성",
+			"age" : "20",
+			"photo" : "C:/java_workspace/GUI0811/res/은하.jpg"
+		},
+		{
+			"name" : "사나",
+			"gender" : "여성",
+			"age" : "21",
+			"photo" : "C:/java_workspace/GUI0811/res/사나.jpg"
+		},
+		{
+			"name" : "서현진",
+			"gender" : "여성",
+			"age" : "??",
+			"photo" : "C:/java_workspace/GUI0811/res/jin.jpg"
+		},
+		{
+			"name" : "효주",
+			"gender" : "여성",
+			"age" : "????",
+			"photo" : "C:/java_workspace/GUI0811/res/ju.jpg"
+		},
+		{
+			"name" : "??",
+			"gender" : "여성",
+			"age" : "??",
+			"photo" : "C:/java_workspace/GUI0811/res/none.jpg"
+		}
+	]
+}
