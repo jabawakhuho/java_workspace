@@ -1,0 +1,52 @@
+{
+	"member": [
+		{
+			"name": "동석",
+			"gender": "남성",
+			"age": "46",
+			"path": "C:/java_workspace/GUI0812/res/동석.jpg"
+		},
+		{
+			"name": "민영",
+			"gender": "여성",
+			"age": "31",
+			"path": "C:/java_workspace/GUI0812/res/민영.jpg"
+		},
+		{
+			"name": "사나",
+			"gender": "여성",
+			"age": "21",
+			"path": "C:/java_workspace/GUI0812/res/사나.jpg"
+		},
+		{
+			"name": "신혜",
+			"gender": "여성",
+			"age": "27",
+			"path": "C:/java_workspace/GUI0812/res/신혜.jpg"
+		},
+		{
+			"name": "은하",
+			"gender": "여성",
+			"age": "20",
+			"path": "C:/java_workspace/GUI0812/res/은하.jpg"
+		},
+		{
+			"name": "종석",
+			"gender": "남성",
+			"age": "28",
+			"path": "C:/java_workspace/GUI0812/res/종석.jpg"
+		},
+		{
+			"name": "하니",
+			"gender": "여성",
+			"age": "25",
+			"path": "C:/java_workspace/GUI0812/res/하니.jpg"
+		},
+		{
+			"name": "현진",
+			"gender": "여성",
+			"age": "32",
+			"path": "C:/java_workspace/GUI0812/res/현진.jpg"
+		}
+	]
+}
