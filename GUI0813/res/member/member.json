@@ -1,0 +1,51 @@
+{
+	"member" : [
+		{
+			"id" : "admin",
+			"pwd" : "admin",
+			"name" : "관리자",
+			"code" : "0000",
+			"path" : "C:/java_workspace/GUI0813/res/member/사나.jpg",
+			"card" : "",
+			"mileage" : "10000"
+		},
+		{
+			"id" : "guest1",
+			"pwd" : "guest1",
+			"name" : "마동석",
+			"code" : "1111",
+			"path" : "C:/java_workspace/GUI0813/res/member/동석.jpg",
+			"card" : "신한은행",
+			"mileage" : "500"
+			
+		},
+		{
+			"id" : "test1",
+			"pwd" : "test1",
+			"name" : "서현진",
+			"code" : "1234",
+			"path" : "C:/java_workspace/GUI0813/res/member/현진.jpg",
+			"card" : "GoldmemberShip",
+			"mileage" : "100000"
+		},
+		{
+			"id" : "test2",
+			"pwd" : "test2",
+			"name" : "은하",
+			"code" : "2222",
+			"path" : "C:/java_workspace/GUI0813/res/member/은하.jpg",
+			"card" : "SKT",
+			"mileage" : "1000"
+		},
+		{
+			"id" : "test3",
+			"pwd" : "test3",
+			"name" : "종석",
+			"code" : "3333",
+			"path" : "C:/java_workspace/GUI0813/res/member/종석.jpg",
+			"card" : "LgU+",
+			"mileage" : "0"
+		}
+
+	]	
+}
