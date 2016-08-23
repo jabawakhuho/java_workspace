@@ -30,6 +30,6 @@ public class Hero extends GameObject{
 		g.fillRect(0, 0, GamePanel.WIDTH, GamePanel.HEIGHT);
 		
 		g.setColor(Color.YELLOW);
-		g.drawImage(img, x, y, panel);
+		g.drawImage(img, x, y,50,50, panel);
 	}
 }
